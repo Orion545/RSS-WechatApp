@@ -1,0 +1,19 @@
+/* pages/yayuan/yayuan.wxss */
+.mapMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+map{
+  height: 100vh;
+  width: 100vw;
+}
+.trafficButton{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.trafficButtonMain{
+  width: 50vw;
+}

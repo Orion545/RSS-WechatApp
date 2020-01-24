@@ -1,0 +1,18 @@
+<!--pages/yayuan/yayuan.wxml-->
+<view class="body">
+  <view class="mapMain">
+    <map 
+      latitude='22.556259' 
+      longitude='114.125097' 
+      scale='17' 
+      subkey="EK4BZ-XISW6-PAUSN-ERD77-6WSV2-NEFEX"
+      markers="{{markers}}"
+      enable-3D="true"
+      enable-overlooking="true"
+      enable-traffic="{{traffic}}"
+    ></map>
+  </view>
+  <cover-view class="trafficButton">
+    <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+  </cover-view>
+</view>
