@@ -10,6 +10,7 @@
       enable-3D="true"
       enable-overlooking="true"
       enable-traffic="{{traffic}}"
+      wx:if="{{initial}}"
     ></map>
   </view>
   <cover-view class="trafficButton">

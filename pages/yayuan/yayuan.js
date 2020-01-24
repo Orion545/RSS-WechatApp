@@ -1,19 +1,6 @@
 // pages/honghu/honghu.js
 
-var waterDepth;
 
-var waterTime;
-
-var calloutObject = {
-  content: "实时积水深度："+waterDepth+"毫米\n数据记录时间："+waterTime+"\n详细信息请点击底部按钮查询",
-  borderRadius: 10,
-  borderColor: "#000000",
-  borderWidth: 1.5,
-  bgColor: "#ffffff",
-  fontSize: 16,
-  padding: 10,
-  textAlign: "center"
-}
 
 var pageObject = {
   //constant
@@ -26,9 +13,9 @@ var pageObject = {
       latitude: '22.557289',
       longitude: '114.125108',
       iconPath: "/src/location.png",
-      callout: calloutObject
+      callout: {}
     }],
-    stl: 2,
+    initial: false,
     //traffic button related
     traffic: false,
     trafficButtonType: 'primary',
@@ -52,30 +39,42 @@ var pageObject = {
     }
   },
 
-  fetchServerData: function (e){
-    wx.request({
-      url: 'https://rainstormserver.cn/get.php',
-      data:{
-        db:'dev',
-        table:'main',
-        type:0,
-        pass:'199131ecce361f8f9695ada54a358985078c9c1446cb7c78d0edd0aafa22ad82db24bc19f52dfe7154b975813f0420f0'
-      },
-      method:'GET',
-      dataType:'JSON',
-      responseType:'text',
-      success(res){
-        waterDepth=res.data.depth;
-        waterTime=res.data.time;
-      }
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.fetchServerData();
+    wx.request({
+      url: 'https://rainstormserver.cn/get.php',
+      data: {
+        db: 'dev',
+        table: 'main',
+        type: 0,
+        pass: '199131ecce361f8f9695ada54a358985078c9c1446cb7c78d0edd0aafa22ad82db24bc19f52dfe7154b975813f0420f0'
+      },
+      method: 'GET',
+      success: (res) => {
+        console.warn(res.data);
+        this.setData({
+          markers: [{
+            id: 1,
+            latitude: '22.557289',
+            longitude: '114.125108',
+            iconPath: "/src/location.png",
+            callout: {
+            content: "实时积水深度：" + res.data.depth + "毫米\n数据记录时间：" + res.data.time + "\n详细信息请点击底部按钮查询",
+            borderRadius: 10,
+            borderColor: "#000000",
+            borderWidth: 1.5,
+            bgColor: "#ffffff",
+            fontSize: 16,
+            padding: 10,
+            textAlign: "center"
+            }
+          }],
+          initial: true
+        });
+      }
+    });
   },
 
   /**
