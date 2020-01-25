@@ -1,0 +1,13 @@
+/* pages/yayuan-detail/yayuan-detail.wxss */
+
+.flexContainer{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+h1{
+  font-size: 24px;
+  line-height: 6vh;
+  font-weight: bold;
+}

@@ -1,7 +1,5 @@
 // pages/honghu/honghu.js
 
-
-
 var pageObject = {
   //constant
   buttonPrimary: 'primary',
@@ -40,6 +38,24 @@ var pageObject = {
         trafficButtonContent: '打开路况信息'
       })
     }
+  },
+
+  gotoYayuanDetail: function () {
+    plain_det: false;
+    loading_det: true;
+    setTimeout(function () {
+      wx.navigateTo({
+        url: '../yayuan-detail/yayuan-detail'
+      })
+    }, 300);
+  },
+
+  goBack: function () {
+    plain_det: false;
+    loading_det: true;
+    setTimeout(function () {
+      wx.navigateBack()
+    }, 300);
   },
 
   /**

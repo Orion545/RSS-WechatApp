@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/yayuan/yayuan",
-    "pages/honghu/honghu"
+    "pages/honghu/honghu",
+    "pages/yayuan-detail/yayuan-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

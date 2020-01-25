@@ -1,0 +1,6 @@
+<!--pages/yayuan-detail/yayuan-detail.wxml-->
+<view class="body">
+  <view class="flexContainer">
+    <view><h1>雅园立交积水详情页</h1></view>
+  </view>
+</view>

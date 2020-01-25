@@ -9,6 +9,13 @@ map{
   height: 100vh;
   width: 100vw;
 }
+.flexContainerTop{
+  display: flex;
+  justify-content: left;
+
+  position: absolute;
+  top: 0px;
+}
 .flexContainerBottom{
   display: flex;
   justify-content: center;
@@ -16,7 +23,7 @@ map{
   position: absolute;
   bottom: 0px;
 }
-.trafficButton{
+.marginButton{
   margin: 10px;
 }
 .trafficButtonMain{
