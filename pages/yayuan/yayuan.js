@@ -12,8 +12,11 @@ var pageObject = {
       id: 1,
       latitude: '22.557289',
       longitude: '114.125108',
-      iconPath: "/src/location.png",
-      callout: {}
+      iconPath: "/src/marker-black.png",
+      width: 75,
+      height: 75,
+      callout: {},
+      label: {}
     }],
     initial: false,
     //traffic button related
@@ -53,23 +56,42 @@ var pageObject = {
       },
       method: 'GET',
       success: (res) => {
-        console.warn(res.data);
+        console.log(res.data);
+        var pathString = "/src/";
+        if(res.data.depth <= 10) 
+          pathString += "marker-green.png";
+        if(res.data.depth <= 150 && res.data.depth >10 )
+          pathString += "marker-yellow.png";
+        if(res.data.depth > 150)
+          pathString += "marker-red.png";
         this.setData({
           markers: [{
             id: 1,
             latitude: '22.557289',
             longitude: '114.125108',
-            iconPath: "/src/location.png",
+            iconPath: pathString,
+            width: 75,
+            height: 75,
             callout: {
-            content: "实时积水深度：" + res.data.depth + "毫米\n数据记录时间：" + res.data.time + "\n详细信息请点击底部按钮查询",
-            borderRadius: 10,
-            borderColor: "#000000",
-            borderWidth: 1.5,
-            bgColor: "#ffffff",
-            fontSize: 16,
-            padding: 10,
-            textAlign: "center"
-            }
+              content: "实时积水深度：" + res.data.depth + "毫米\n数据记录时间：" + res.data.time + "\n详细信息请点击底部按钮查询",
+              borderRadius: 10,
+              borderColor: "#000000",
+              borderWidth: 1.5,
+              bgColor: "#ffffff",
+              fontSize: 16,
+              padding: 10,
+              textAlign: "center"
+            },
+            label: {
+              content: "点击查看积水点信息",
+              borderRadius: 10,
+              borderColor: "#000000",
+              borderWidth: 1,
+              fontSize: 14,
+              bgColor: "#ffffff",
+              padding: 5,
+              textAlign: "center"
+            },
           }],
           initial: true
         });
