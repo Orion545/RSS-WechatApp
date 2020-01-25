@@ -3,7 +3,13 @@
 .flexContainer{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 10px;
+}
+
+.echartsContainer{
+  width: 100vw;
+  height: 60vh;
 }
 
 h1{
