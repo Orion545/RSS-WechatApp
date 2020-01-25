@@ -13,7 +13,12 @@
       wx:if="{{initial}}"
     ></map>
   </view>
-  <cover-view class="trafficButton">
-    <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+  <cover-view class="flexContainerBottom">
+    <cover-view class="trafficButton">
+      <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+    </cover-view>
+    <cover-view class="trafficButton">
+      <button type="blue" bindtap="gotoYayuanDetail" size="mini" class="trafficButtonMain">详细积水信息</button>
+    </cover-view>
   </cover-view>
 </view>
