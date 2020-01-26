@@ -6,7 +6,10 @@
     "pages/waterlog/honghu/honghu",
     "pages/waterlog/yayuan-detail/yayuan-detail",
     "pages/waterlog/index/index",
-    "pages/about/index/index"
+    "pages/about/index/index",
+    "pages/about/us/us",
+    "pages/about/gzh/gzh",
+    "pages/about/ctb/ctb"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

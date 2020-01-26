@@ -1,29 +1,11 @@
-// pages/honghu/honghu.js
+// pages/about/us/us.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    markers: [{
-      id: '1',
-      latitude: '22.575875',
-      longitude: '114.120837',
-      iconPath: "/src/location.png"
-    },{
-      id: '2',
-      latitude: '22.571695',
-      longitude: '114.122930',
-      iconPath: "/src/location.png"
-    }],
-    stl: 1
 
-  },
-
-  backToIndex: function () {
-    wx.navigateBack({
-      
-    });
   },
 
   /**

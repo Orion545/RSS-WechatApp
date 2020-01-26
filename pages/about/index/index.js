@@ -1,66 +1,32 @@
 // pages/about/index/index.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+const app = getApp();
+Component({
+  options: {
+    addGlobalClass: true,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  data:{
+    list: [{
+      title: '我们是谁',
+      img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
+      url: '/us/us'
+    },
+    {
+      title: 'RSS @ CTB',
+      img: 'https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg',
+      url: '/ctb/ctb'
+    },
+    {
+      title: '关注公众号',
+      img: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
+      url: '/gzh/gzh'
+    }
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  methods: {
+    toChild(e) {
+      wx.navigateTo({
+        url: '/pages/plugin' + e.currentTarget.dataset.url
+      })
+    },
   }
 })
