@@ -14,6 +14,19 @@ map{
   justify-content: center;
 
   position: absolute;
-  bottom: 10rpx;
-  left: 10rpx;
+  bottom: 0px;
+}
+.marginButton{
+  margin: 10px;
+}
+.trafficButtonMain{
+  height: 7vh !important;
+  width: calc(50vw - 20px) !important;
+  line-height: 7vh !important;
+  font-size: 18px !important;
+}
+
+button[type=blue]{
+  color: #fff;
+  background-color: rgb(8, 159, 219)
 }

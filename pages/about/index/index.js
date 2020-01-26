@@ -25,7 +25,7 @@ Component({
   methods: {
     toChild(e) {
       wx.navigateTo({
-        url: '/pages/plugin' + e.currentTarget.dataset.url
+        url: '/pages/about' + e.currentTarget.dataset.url
       })
     },
   }

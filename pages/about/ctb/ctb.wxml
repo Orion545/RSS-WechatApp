@@ -1,2 +1,5 @@
 <!--pages/about/ctb/ctb.wxml-->
-<text>pages/about/ctb/ctb.wxml</text>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">RSS @ CTB</view>
+</cu-custom>
