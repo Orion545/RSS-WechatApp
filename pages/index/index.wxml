@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<!--
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -10,14 +11,29 @@
   <view class="choose">
     <button type="primary" size="default" loading="{{loading_det}}" bindtap="gotoYaYuan" plain="{{plain_det}}">雅园立交积水信息</button>
   </view>
-  
-  <!--
   <view class="choose">
     <button type="primary" size="default" loading="{{loading_det}}" bindtap="gotoHongHu" plain="{{plain_det}}">洪湖立交积水信息</button>
   </view>
-  -->
 
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+-->
+
+<waterlog wx:if="{{PageCur=='waterlog'}}"></waterlog>
+<about wx:if="{{PageCur=='about'}}"></about>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="waterlog">
+    <view class='cuIcon-cu-image'>
+      <image src="/src/tabbar/basics{{PageCur=='waterlog'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='waterlog'?'text-green':'text-gray'}}">查询</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="about">
+    <view class='cuIcon-cu-image'>
+      <image src="/src/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
   </view>
 </view>

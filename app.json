@@ -2,15 +2,20 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/yayuan/yayuan",
-    "pages/honghu/honghu",
-    "pages/yayuan-detail/yayuan-detail"
+    "pages/waterlog/yayuan/yayuan",
+    "pages/waterlog/honghu/honghu",
+    "pages/waterlog/yayuan-detail/yayuan-detail",
+    "pages/waterlog/index/index",
+    "pages/about/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "道路积水",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }

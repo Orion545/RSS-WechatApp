@@ -1,4 +1,8 @@
 <!--pages/yayuan/yayuan.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">雅园立交：积水情况</view>
+</cu-custom>
 <view class="body">
   <view class="mapMain">
     <map 
@@ -13,17 +17,21 @@
       wx:if="{{initial}}"
     ></map>
   </view>
-  <cover-view class="flexContainerTop">
-    <cover-view class="marginButton">
-      <button type="warn" bindtap="goBack" size="mini">返回上一页</button>
+  <cover-view class="flexContainerBottom">
+    <cover-view class="cu-bar btn-group">
+      <button class="cu-btn bg-{{trafficButtonType}} lg shadow-blur round" bindtap="switchTrafficButton">{{trafficButtonContent}}</button>
+      <button class="cu-btn bg-blue lg shadow-blur round" bindtap="gotoYayuanDetail">详细积水信息</button>
     </cover-view>
   </cover-view>
+  <!--
   <cover-view class="flexContainerBottom">
     <cover-view class="marginButton">
       <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+      <button class="cu-btn bg-{{trafficButtonType}} round lg shadow" bindtap="switchTrafficButton">{{trafficButtonContent}}</button>
     </cover-view>
     <cover-view class="marginButton">
       <button type="blue" bindtap="gotoYayuanDetail" size="mini" class="trafficButtonMain">详细积水信息</button>
     </cover-view>
   </cover-view>
+  -->
 </view>

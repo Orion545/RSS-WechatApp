@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+/*
 const app = getApp()
 
 Page({
@@ -70,4 +71,21 @@ Page({
       hasUserInfo: true
     })
   }
+})
+*/
+
+Page({
+  data: {
+    PageCur: 'waterlog'
+  },
+  NavChange(e) {
+    this.setData({
+      PageCur: e.currentTarget.dataset.cur
+    })
+  },
+  onShareAppMessage() {
+    return {
+      title: 'RainStormServer-智能积水深度监测小程序',
+    }
+  },
 })

@@ -2,7 +2,7 @@
 
 var pageObject = {
   //constant
-  buttonPrimary: 'primary',
+  buttonPrimary: 'green',
   //original data
   data: {
     //map related
@@ -19,22 +19,22 @@ var pageObject = {
     initial: false,
     //traffic button related
     traffic: false,
-    trafficButtonType: 'primary',
+    trafficButtonType: 'green',
     trafficButtonContent: '打开路况信息'
   },
 
-  switchTrafficButton: function (e) {
+  switchTrafficButton: function () {
     if(this.data.trafficButtonType == this.buttonPrimary){
       this.setData({
         traffic: true,
-        trafficButtonType: 'warn',
+        trafficButtonType: 'red',
         trafficButtonContent: '关闭路况信息'
       })
     }
     else{
       this.setData({
         traffic: false,
-        trafficButtonType: 'primary',
+        trafficButtonType: 'green',
         trafficButtonContent: '打开路况信息'
       })
     }

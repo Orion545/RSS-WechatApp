@@ -1,0 +1,41 @@
+<!--pages/yayuan-detail/yayuan-detail.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">雅园立交积水详情</view>
+</cu-custom>
+<view class="body">
+  <view class="bg-white padding">
+    <view class="grid col-1 margin-bottom text-center">
+      <view><h1>雅园立交积水详情页</h1></view>
+      <view class="bg-white" style="height: 60vh;">
+        <ec-canvas id="chartTwoHour" ec="{{chartTwoHour}}"></ec-canvas>
+      </view>
+      <view class="bg-white" style="height: 60vh;">
+        <ec-canvas id="chartTwoHourPie" ec="{{chartTwoHourPie}}"></ec-canvas>
+      </view>
+      <view class="bg-white" style="height: 60vh;">
+        <ec-canvas id="chart24Hour" ec="{{chart24Hour}}"></ec-canvas>
+      </view>
+      <view class="bg-white" style="height: 60vh;">
+        <ec-canvas id="chart24HourPie" ec="{{chart24HourPie}}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <!--
+  <view class="flexContainer">
+    <view><h1>雅园立交积水详情页</h1></view>
+    <view class="echartsContainer">
+      <ec-canvas id="chartTwoHour" ec="{{chartTwoHour}}"></ec-canvas>
+    </view>
+    <view class="echartsContainer">
+      <ec-canvas id="chartTwoHourPie" ec="{{chartTwoHourPie}}"></ec-canvas>
+    </view>
+    <view class="echartsContainer">
+      <ec-canvas id="chart24Hour" ec="{{chart24Hour}}"></ec-canvas>
+    </view>
+    <view class="echartsContainer">
+      <ec-canvas id="chart24HourPie" ec="{{chart24HourPie}}"></ec-canvas>
+    </view>
+  </view>
+  -->
+</view>
