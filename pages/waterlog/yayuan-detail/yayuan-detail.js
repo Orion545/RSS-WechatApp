@@ -323,15 +323,26 @@ var pageObject = {
           name: '积水趋势',
           type: 'pie',
           data: twoHourDataPie,
-          center: ['50%', '60%'], 
-          radius: ['20%', '60%'],
-          roseType: 'radius', 
+          center: ['60%', '50%'], 
+          radius: ['40%', '70%'],
+          roseType: 'radius',
+          avoidLabelOverlap: false,
           label: {
             normal: {
-              show: false
+              show: false,
+              position: 'center'
             },
             emphasis: {
-              show: true
+              show: true,
+              textStyle: {
+                fontSize: '30',
+                fontWeight: 'bold'
+              }
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
             }
           },
           itemStyle: {
@@ -476,15 +487,26 @@ var pageObject = {
           name: '积水趋势',
           type: 'pie',
           data: dayHourDataPie,
-          center: ['50%', '60%'],
-          radius: ['20%', '60%'],
-          roseType: 'radius', 
+          center: ['60%', '50%'],
+          radius: ['40%', '70%'],
+          roseType: 'radius',
+          avoidLabelOverlap: false,
           label: {
             normal: {
-              show: false
+              show: false,
+              position: 'center'
             },
             emphasis: {
-              show: true
+              show: true,
+              textStyle: {
+                fontSize: '30',
+                fontWeight: 'bold'
+              }
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
             }
           },
           itemStyle: {
