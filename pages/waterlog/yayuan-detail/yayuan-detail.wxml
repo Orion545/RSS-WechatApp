@@ -1,11 +1,11 @@
 <!--pages/yayuan-detail/yayuan-detail.wxml-->
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}" z-index='1000'>
   <view slot="backText">返回</view>
   <view slot="content">雅园立交积水详情</view>
 </cu-custom>
 <view class="body">
   <!-- view class="bg-white padding" -->
-    <view class="flexContainer">
+    <view class="flexContainer" z-index='100'>
       <view><h1>雅园立交积水详情页</h1></view>
       <view class="echartsContainer">
         <ec-canvas id="chartTwoHour" ec="{{chartTwoHour}}"></ec-canvas>

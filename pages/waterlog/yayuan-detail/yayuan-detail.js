@@ -323,7 +323,8 @@ var pageObject = {
           name: '积水趋势',
           type: 'pie',
           data: twoHourDataPie,
-          center: ['50%', '60%'],
+          center: ['50%', '60%'], 
+          radius: ['20%', '60%'],
           roseType: 'radius', 
           label: {
             normal: {
@@ -476,7 +477,8 @@ var pageObject = {
           type: 'pie',
           data: dayHourDataPie,
           center: ['50%', '60%'],
-          roseType: 'radius',
+          radius: ['20%', '60%'],
+          roseType: 'radius', 
           label: {
             normal: {
               show: false

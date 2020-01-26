@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "waterlog": "/pages/waterlog/index/index",
-    "about": "/pages/about/index/index"
+    "about": "/pages/about/index/index",
+    "logs": "/pages/logs/logs"
   }
 }

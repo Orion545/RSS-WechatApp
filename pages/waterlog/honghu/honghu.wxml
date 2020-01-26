@@ -13,7 +13,7 @@
     </cover-view>
     <cover-view class="cu-bar bg-white justify-end">
       <cover-view class="action">
-        <button class="cu-btn lg bg-green margin-right" bindtap="backToIndex">返回</button>
+        <button type="primary" size="default" bindtap="backToIndex">返回</button>
 
       </cover-view>
     </cover-view>

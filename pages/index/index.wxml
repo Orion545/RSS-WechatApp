@@ -23,6 +23,7 @@
 
 <waterlog wx:if="{{PageCur=='waterlog'}}"></waterlog>
 <about wx:if="{{PageCur=='about'}}"></about>
+<logs wx:if="{{PageCur=='logs'}}"></logs>
 <view class="cu-bar tabbar bg-white shadow foot">
   <view class="action" bindtap="NavChange" data-cur="waterlog">
     <view class='cuIcon-cu-image'>
@@ -35,5 +36,11 @@
       <image src="/src/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
     </view>
     <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="logs">
+    <view class='cuIcon-cu-image'>
+      <image src="/src/tabbar/plugin{{PageCur=='logs'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='logs'?'text-green':'text-gray'}}">日志</view>
   </view>
 </view>

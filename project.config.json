@@ -58,6 +58,13 @@
 					"id": -1,
 					"name": "pages/waterlog/yayuan/yayuan",
 					"pathName": "pages/waterlog/yayuan/yayuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/waterlog/yayuan-detail/yayuan-detail",
+					"pathName": "pages/waterlog/yayuan-detail/yayuan-detail",
 					"scene": null
 				}
 			]
