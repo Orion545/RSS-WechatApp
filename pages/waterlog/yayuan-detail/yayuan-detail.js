@@ -79,6 +79,10 @@ var pageObject = {
             value: 0,
             name: '严重积水'
           },
+          {
+            value: 0.001,
+            name: ''
+          }
         ];
         //console.log(twoHourData);
         for (var i = 0, len = res.data.length; i < len; i++) {
@@ -125,6 +129,10 @@ var pageObject = {
             value: 0,
             name: '严重积水'
           },
+          {
+            value: 0.001,
+            name: ''
+          }
         ];
         //console.log(dayHourData);
         for (var i = 0, len = res.data.length; i < len; i++) {
@@ -311,7 +319,7 @@ var pageObject = {
         text: '过去2小时内积水深度记录分布',
         left: 'center'
       },
-      color: ["#096","#ffde33","#ff9933","#cc0033","#7e0023"],
+      color: ["#096","#ffde33","#ff9933","#cc0033","#7e0023","#fff"],
       legend: {
         orient: 'vertical',
         icon: 'circle',
@@ -334,8 +342,10 @@ var pageObject = {
             },
             emphasis: {
               show: true,
+              formatter: '{b}\n{d}%',
+              lineHeight: 36,
               textStyle: {
-                fontSize: '30',
+                fontSize: '28',
                 fontWeight: 'bold'
               }
             }
@@ -403,7 +413,7 @@ var pageObject = {
       dataZoom: [
         {
           type: 'inside',
-          start: 80,
+          start: 60,
           end: 100
         }
       ],
@@ -475,7 +485,7 @@ var pageObject = {
         text: '过去24小时内积水深度记录分布',
         left: 'center'
       },
-      color: ["#096", "#ffde33", "#ff9933", "#cc0033", "#7e0023"],
+      color: ["#096", "#ffde33", "#ff9933", "#cc0033", "#7e0023","#fff"],
       legend: {
         orient: 'vertical',
         icon: 'circle',
@@ -498,8 +508,10 @@ var pageObject = {
             },
             emphasis: {
               show: true,
+              formatter: '{b}\n{d}%',
+              lineHeight: 36,
               textStyle: {
-                fontSize: '30',
+                fontSize: '28',
                 fontWeight: 'bold'
               }
             }

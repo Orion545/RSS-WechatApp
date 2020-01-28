@@ -12,7 +12,7 @@
     "pages/about/ctb/ctb"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "Color UI",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"

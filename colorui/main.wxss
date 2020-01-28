@@ -67,7 +67,7 @@ page {
 	--grayShadow: rgba(114, 130, 138, 0.2);
 	--blackShadow: rgba(26, 26, 26, 0.2);
 
-	background-color: var(--ghostWhite);
+	background-color: var(--white);
 	font-size: 28rpx;
 	color: var(--black);
 	font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -106,7 +106,7 @@ image {
 
 image.loading::before {
 	content: "";
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	display: block;
 	position: absolute;
 	width: 100%;

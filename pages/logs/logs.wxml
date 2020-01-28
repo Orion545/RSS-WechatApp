@@ -1,5 +1,5 @@
 <!--logs.wxml-->
-<cu-custom bgColor="bg-gradual-yellow" isBack="{{true}}">
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
   <view slot="content">日志</view>
 </cu-custom>
 <view class="container log-list">

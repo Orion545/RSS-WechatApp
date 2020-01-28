@@ -3,3 +3,7 @@
   <view slot="backText">返回</view>
   <view slot="content">关于我们</view>
 </cu-custom>
+<view class="bg-white">
+  <image src='/src/title.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+  <wemark md="{{md}}" link="false" highlight="true" type="wemark"></wemark>
+</view>
