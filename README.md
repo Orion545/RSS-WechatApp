@@ -1,4 +1,4 @@
-![](https://github.com/Orion545/RSS-WechatApp/blob/RSS-beta/src/readme-topic.jpg)
+![](https://rainstormserver.cn/readme.jpg)
 
 台风来临，城市道路积水为患，而人们出行只能靠猜？
 
