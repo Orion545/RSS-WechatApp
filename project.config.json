@@ -39,13 +39,42 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/waterlog/yayuan/yayuan",
+					"pathName": "pages/waterlog/yayuan/yayuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/waterlog/yayuan-detail/yayuan-detail",
+					"pathName": "pages/waterlog/yayuan-detail/yayuan-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/about/us/us",
+					"pathName": "pages/about/us/us",
+					"scene": null
+				}
+			]
 		}
 	}
 }

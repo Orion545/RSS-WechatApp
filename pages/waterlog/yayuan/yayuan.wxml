@@ -1,0 +1,65 @@
+<!--pages/yayuan/yayuan.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">雅园立交积水</view>
+</cu-custom>
+<view class="body">
+  <view class="mapMain">
+    <map
+      latitude='22.556259'
+      longitude='114.125097'
+      scale='17'
+      subkey="EK4BZ-XISW6-PAUSN-ERD77-6WSV2-NEFEX"
+      markers="{{markers}}"
+      enable-3D="true"
+      enable-overlooking="true"
+      enable-traffic="{{traffic}}"
+      wx:if="{{initial}}"
+    ></map>
+  </view>
+  <cover-view class="flexContainerBottom">
+    <cover-view class="marginButton">
+      <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+    </cover-view>
+    <cover-view class="marginButton">
+      <button type="blue" bindtap="gotoYayuanDetail" size="mini" class="trafficButtonMain">详细积水信息</button>
+    </cover-view>
+  </cover-view>
+</view>
+
+<!--
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">雅园立交：积水情况</view>
+</cu-custom>
+<view class="body">
+  <view class="mapMain">
+    <map 
+      latitude='22.556259' 
+      longitude='114.125097' 
+      scale='17' 
+      subkey="EK4BZ-XISW6-PAUSN-ERD77-6WSV2-NEFEX"
+      markers="{{markers}}"
+      enable-3D="true"
+      enable-overlooking="true"
+      enable-traffic="{{traffic}}"
+      wx:if="{{initial}}"
+    ></map>
+  </view>
+  <cover-view class="flexContainerBottom">
+    <cover-view class="cu-bar btn-group">
+      <button class="cu-btn bg-{{trafficButtonType}} lg shadow-blur round" bindtap="switchTrafficButton">{{trafficButtonContent}}</button>
+      <button class="cu-btn bg-blue lg shadow-blur round" bindtap="gotoYayuanDetail">详细积水信息</button>
+    </cover-view>
+  </cover-view>
+  <cover-view class="flexContainerBottom">
+    <cover-view class="marginButton">
+      <button type="{{trafficButtonType}}" bindtap="switchTrafficButton" size="mini" class="trafficButtonMain">{{trafficButtonContent}}</button>
+      <button class="cu-btn bg-{{trafficButtonType}} round lg shadow" bindtap="switchTrafficButton">{{trafficButtonContent}}</button>
+    </cover-view>
+    <cover-view class="marginButton">
+      <button type="blue" bindtap="gotoYayuanDetail" size="mini" class="trafficButtonMain">详细积水信息</button>
+    </cover-view>
+  </cover-view>
+</view>
+-->

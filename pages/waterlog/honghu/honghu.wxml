@@ -1,0 +1,31 @@
+<!--pages/honghu/honghu.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">洪湖立交：积水情况</view>
+</cu-custom>
+<cover-view class="cu-modal show">
+  <cover-view class="cu-dialog" style="display: flex;justify-content: center;position: absolute;bottom: 45vh;left: 5vw">
+    <cover-view class="cu-bar bg-white justify-end">
+      <cover-view class="content" style="line-height:100rpx">Modal标题</cover-view>
+    </cover-view>
+    <cover-view class="padding-xl">
+      目前该页面暂时未准备完毕
+    </cover-view>
+    <cover-view class="cu-bar bg-white justify-end">
+      <cover-view class="action">
+        <button type="primary" size="default" bindtap="backToIndex">返回</button>
+
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</cover-view>
+<view class="mapmain">
+  <map 
+  latitude='22.573944' 
+  longitude='114.121889' 
+  scale='17' 
+  subkey="EK4BZ-XISW6-PAUSN-ERD77-6WSV2-NEFEX"
+  markers="{{markers}}"
+  layer-style='{{stl}}'
+  ></map>
+</view>
